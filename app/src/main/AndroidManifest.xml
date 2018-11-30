@@ -28,7 +28,8 @@
         <!-- 友盟统计 -->
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="XXXXXXXXXXXXXXXXXXXXXXXX" /><!-- 要注意更换key -->
+            android:value="XXXXXXXXXXXXXXXXXXXXXXXX" /> <!-- 要注意更换key -->
+
 
         <!-- 友盟多渠道打包 -->
         <meta-data
@@ -47,7 +48,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <!-- 主页界面 -->
@@ -76,7 +76,7 @@
         <activity
             android:name=".ui.activity.WebActivity"
             android:launchMode="singleTop" />
-
+        <activity android:name=".ui.activity.TestActivity"></activity>
     </application>
 
 </manifest>

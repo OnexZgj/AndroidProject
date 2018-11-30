@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="申请单位:" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_sqdw"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="编制部门:" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_bzbm"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="编制人:" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_bzr"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="手机号码：" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/tv_aadd_sjhm"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:text="" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="工作班组：" />
+
+                <TextView
+                    android:id="@+id/tv_aadd_gzbz"
+                    style="@style/rwdetails_tv_right_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:background="@drawable/et_bg_new_ui"
+                    android:focusable="false"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="电站/线路：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_jxfl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_dzxl"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="工作类型：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_gzlx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_gzlx"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/yxcs_image_zyfl"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="状态：" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_zt"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:text="提交" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="计划开工时间：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_jhkgsj"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_jhkgsj"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="计划完工时间：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_jhwgsj"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_jhwgsj"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="是否停电：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_sftd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_sftd"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="是否有送电方案：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_sfysdfa"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_sfysdfa"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="计划停电开始时间：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_jhtdkssj"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_jhtdkssj"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="计划停电结束时间：" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_jhtdjssj"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="是否带电作业：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_sfddzy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_sfddzy"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="是否委外：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_sfww"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_sfww"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="调管关系：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_ddgx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_ddgx"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="PMS工作性质：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_pmsgzxz"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_pmsgzxz"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="接收单位：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_jsdw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_jsdw"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="计划调整原因：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_jhtzyy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_jhtzyy"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="调度管辖：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_ddgxgx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_ddgxgx"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="工作分类：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_gzfl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_gzfl"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="是否影响通信：" />
+
+                <LinearLayout
+
+                    android:id="@+id/ll_aadd_sfyxtx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_sfyxtx"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="作业风险类型：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_zyfxlx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_zyfxlx"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fy_byqyt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="工作内容:" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.6"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_aadd_gznr"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="复役要求:" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.6"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_aadd_fyyq"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="管控措施:" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.6"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_aadd_gkcs"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="停电范围：" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_aadd_tdfw"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="备注：" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_aadd_bz"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:text="" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="现场值班负责人：" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_aadd_xczbfzr"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="作业大类：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_aadd_zydl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_zydl"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="现场带班领导：" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_aadd_xcdbld"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/rwdetails_tv_left_styles"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="作业类型：" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_aadd_zylx"
+                        style="@style/rwdetails_tv_right_styles"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_bg_new_ui"
+                        android:focusable="false"
+                        android:text="" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

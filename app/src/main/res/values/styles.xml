@@ -22,6 +22,16 @@
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
 
+    <style name="rwdetails_tv_left_styles" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="rwdetails_tv_right_styles" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
     <!-- 默认圆角按钮样式 -->
     <style name="ButtonStyle" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:paddingLeft">@dimen/space_30</item>
